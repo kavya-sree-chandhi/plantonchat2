@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denton Plant Factory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f7ff;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: inline-block;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #d9edf7;
+            border: 1px solid #bce8f1;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #333; /* Added to fix very low contrast issue */
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        /* Added to fix missing form label error */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Denton Plant Factory</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="product">
+        <img src="plant1.jpg" alt="Plant 1">
+        <h2>Plant Name 1</h2>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Type: Indoor</p>
+        <p>Origin: Tropical</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="plant2.jpg" alt="Plant 2">
+        <h2>Plant Name 2</h2>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Type: Outdoor</p>
+        <p>Origin: Mediterranean</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Denton Plant Factory. All rights reserved.</p>
+</footer>
+
+<form>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="Full Name" required>
+        <label for="contact-number">Contact Number</label>
+        <input type="tel" id="contact-number" placeholder="Contact Number" required>
+        <label for="email-address">Email Address</label>
+        <input type="email" id="email-address" placeholder="Email Address" required>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+</body>
+</html>
